@@ -1,7 +1,7 @@
 # Linux MCP Server Agent
 
 <div align="center">
-  <img src="daemon_logo.png" alt="Daemon Logo" width="200"/>
+  <img src="daemon_logo.png" alt="Daemon Logo" width="800"/>
 </div>
 
 A Model Context Protocol (MCP) server implementation in C# that acts as a secure bridge to a Linux environment via SSH. This agent allows LLMs (via MCP Clients like Claude Desktop) to execute commands and read files on a Linux machine.
