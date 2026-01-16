@@ -1,0 +1,9 @@
+services:
+  linux-box:
+    build: 
+      context: .
+      dockerfile: Dockerfile.linux-box
+    ports:
+      - "2222:22"
+    container_name: mcp-test-linux
+    restart: always
