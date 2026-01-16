@@ -33,7 +33,9 @@ Create an `appsettings.json` file in the project root to store your SSH credenti
   "SSH_HOST": "localhost",
   "SSH_PORT": 2222,
   "SSH_USER": "testuser",
-  "SSH_PASS": "testpass"
+  "SSH_PASS": "testpass",
+  "OLLAMA_URL": "http://localhost:11434",
+  "OLLAMA_MODEL": "llama3"
 }
 ```
 
