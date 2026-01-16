@@ -53,6 +53,27 @@ dotnet run -- --interactive
 ```
 You should see a prompt `>`. Try typing `whoami` or `ls -la`.
 
+### Interactive Smart Mode (Connection Test)
+Before hooking it up to an AI, verify your connection works. This mode uses **Ollama** locally to translate natural language into Linux commands.
+
+1.  **Start Ollama**: Use a separate terminal to run the model.
+    ```bash
+    ollama run llama3
+    ```
+
+2.  **Run the Agent**:
+    ```bash
+    dotnet run -- --interactive
+    ```
+
+3.  **Chat**:
+    You can now ask questions in English!
+    ```text
+    > Check if I have internet
+    [Ollama] Translated to: ping -c 4 google.com
+    [Output] ...
+    ```
+
 ### Running as an MCP Server
 To use this with an MCP Client (like Claude Desktop), configure the client to run this application.
 
